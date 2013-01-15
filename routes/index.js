@@ -3,10 +3,11 @@
  * GET home page.
  */
 
+
 exports.index = function(req, res){
-  res.sendfile('public/index.html');
+  res.sendfile(__dirname + '/public/index.html');
 };
 
 exports.chad = function(req, res) {
-	res.sendfile('public/chad.html');
+	res.sendfile(__dirname + '/public/chad.html');
 }
