@@ -31,3 +31,17 @@
     font-size: 20px;
     margin-top: 25px;
 }
+
+.video-link {
+    color: white;
+    font-size: 17px;
+}
+
+.video-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.video-link a:hover {
+    color: red;
+}
