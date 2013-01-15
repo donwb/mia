@@ -35,13 +35,7 @@
 .video-link {
     color: white;
     font-size: 17px;
+    margin-bottom: 8px;
 }
 
-.video-link a {
-    color: white;
-    text-decoration: none;
-}
 
-.video-link a:hover {
-    color: red;
-}
