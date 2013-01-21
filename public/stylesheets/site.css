@@ -21,18 +21,45 @@ body {
     position: relative;
     font-size: 20px;
     left: 250px;
+    color: white;
+    text-decoration: none;
+    border-top: 4px;
+    border-top-color: #646461;
+    border-top-style: solid;
+}
+
+.header .about:hover {
+    border-top-color: white;
 }
 
 .header .listings {
     position: relative;
     font-size: 20px;
-    left: 400px;
+    left: 350px;
+    color: white;
+    text-decoration: none;
+    border-top: 4px;
+    border-top-color: #646461;
+    border-top-style: solid;
+}
+
+.header .listings:hover {
+    border-top-color: white;
 }
 
 .header .contact {
     position: relative;
     font-size: 20px;
-    left: 550px;
+    left: 450px;
+    color: white;
+    text-decoration: none;
+    border-top: 4px;
+    border-top-color: #646461;
+    border-top-style: solid;
+}
+
+.header .contact:hover {
+    border-top-color: white;
 }
 
 .content-area {
@@ -114,5 +141,25 @@ body {
     top: 31px;
     position: relative;
     text-align: center;
+}
+
+.footer-info .contact {
+    position: relative;
+    top: 70px;
+    left: 250px;
+}
+
+.footer-info .contact a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-info .phone {
+    position: relative;
+    top: 70px;
+    left: 400px;
+    text-decoration: none;
+    font-size: 18px;
+
 }
 
