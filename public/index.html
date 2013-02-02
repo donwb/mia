@@ -27,9 +27,24 @@
         <script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-    $(function() {
-      $('.nyroModal').nyroModal();
-    });
+
+        $(document).ready(function() {
+            $('#about').click(scroll);
+            $('#contact').click(scroll);
+        });
+
+        function scroll() {
+            var target = $('.about-info');
+            var offset = 60;
+            var pos = target.offset().top - offset;
+            $('html, body').animate({scrollTop:pos}, 500);
+
+            event.preventDefault();
+        }
+
+        $(function() {
+          $('.nyroModal').nyroModal();
+        });
     </script>
     
     
@@ -45,9 +60,9 @@
         
             <div class="header">
                 <span class="header-text">Move in Atlanta</span>
-                <span class="offset-by-three"><a href="#" class="about">About</a></span>
-                <span class="offset-by-one"><a href="#" class="listings">Listings</a></span>
-                <span class="offset-by-one"><a href="#" class="contact">Contact</a></span>
+                <span class="offset-by-eight"><a href="#" id="about" class="about">About</a></span>
+                <!-- <span class="offset-by-one"><a href="#" id="listings" class="listings">Listings</a></span> -->
+                <span class="offset-by-one"><a href="#" id="contact" class="contact">Contact</a></span>
             </div>
 
         
@@ -59,7 +74,21 @@
 
             </div>
       
-        
+            <div class="about-info">
+                <div class="offset-by-one">
+                    <div class="fourteen columns clearfix">
+                        <div class="six columns alpha">
+                            <h2 class="about-header">some info</h2>
+                            <p>Bacon ipsum dolor sit amet cow biltong ribeye, jerky shank kielbasa ham jowl bacon short loin. Boudin leberkas tongue, beef ribs ham chuck chicken ribeye jowl kielbasa pork chop pork belly bacon pork loin tri-tip. Jerky turkey sirloin, meatball brisket chicken biltong drumstick. Jowl ball tip beef ribs, short ribs andouille pastrami turkey filet mignon shoulder brisket strip steak jerky rump.</p>
+                        </div>
+                        <div class="six columns omega offset-by-two">
+                            <h2 class="about-header">some info</h2>
+                            <p>Bacon ipsum dolor sit amet cow biltong ribeye, jerky shank kielbasa ham jowl bacon short loin. Boudin leberkas tongue, beef ribs ham chuck chicken ribeye jowl kielbasa pork chop pork belly bacon pork loin tri-tip. Jerky turkey sirloin, meatball brisket chicken biltong drumstick. Jowl ball tip beef ribs, short ribs andouille pastrami turkey filet mignon shoulder brisket strip steak jerky rump.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
 
             <div id="footer">
                 <div class="footer-info">
@@ -74,12 +103,12 @@
                     <div class="row">
                         <span class="offset-by-three">
                             <span class="contact">
-                                <i class="icon-envelope icon-2x"></i> <a>moveinatlanta@gmail.com</a>
+                                <i class="icon-envelope icon-large"></i> <a>moveinatlanta@gmail.com</a>
                             </span>
                         </span>
                         <span class="offset-by-three">
                             <span class="phone">
-                                <i class="icon-phone icon-2x"></i> <span>770-820-6638</span>
+                                <i class="icon-phone icon-large"></i> <span>770-820-6638</span>
                             </span>
                         </span>
                     </div>
