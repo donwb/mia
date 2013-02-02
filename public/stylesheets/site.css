@@ -2,10 +2,12 @@ body {
     background-color: #3B3F41;
 }
 .header {
-    width: 100%;
+    width: 960px;
     height: 44px;
     background-color: #646461;
     color: white;
+    position: fixed;
+    z-index: 10000;
 }
 
 .header-text {
@@ -17,6 +19,10 @@ body {
     display: inline-block;
 }
 
+.header-text a {
+    text-decoration: none;
+    color: white;
+}
 .header .about {
     position: relative;
     font-size: 20px;

@@ -29,14 +29,15 @@
     <script type="text/javascript">
 
         $(document).ready(function() {
-            $('#about').click(scroll);
-            $('#contact').click(scroll);
+            $('#about').click(function(){ scroll(500); });
+            $('#contact').click(function() {scroll(500); });
+            $('#home').click(function() {scroll(0); });
         });
 
-        function scroll() {
+        function scroll(pos) {
             var target = $('.about-info');
             var offset = 60;
-            var pos = target.offset().top - offset;
+            
             $('html, body').animate({scrollTop:pos}, 500);
 
             event.preventDefault();
@@ -59,7 +60,7 @@
     <div class="container">
         
             <div class="header">
-                <span class="header-text">Move in Atlanta</span>
+                <span class="header-text"><a href="#" id="home">Move in Atlanta</a></span>
                 <span class="offset-by-eight"><a href="#" id="about" class="about">About</a></span>
                 <!-- <span class="offset-by-one"><a href="#" id="listings" class="listings">Listings</a></span> -->
                 <span class="offset-by-one"><a href="#" id="contact" class="contact">Contact</a></span>
