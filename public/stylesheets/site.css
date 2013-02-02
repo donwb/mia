@@ -143,8 +143,7 @@ body {
 
 .footer-info .contact {
     position: relative;
-    top: 70px;
-    left: 250px;
+    top: 20px;
 }
 
 .footer-info .contact a {
@@ -154,8 +153,7 @@ body {
 
 .footer-info .phone {
     position: relative;
-    top: 70px;
-    left: 400px;
+    top: 20px;
     text-decoration: none;
     font-size: 18px;
 
