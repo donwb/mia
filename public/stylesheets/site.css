@@ -20,7 +20,6 @@ body {
 .header .about {
     position: relative;
     font-size: 20px;
-    left: 250px;
     color: white;
     text-decoration: none;
     border-top: 4px;
@@ -35,7 +34,6 @@ body {
 .header .listings {
     position: relative;
     font-size: 20px;
-    left: 350px;
     color: white;
     text-decoration: none;
     border-top: 4px;
@@ -50,7 +48,6 @@ body {
 .header .contact {
     position: relative;
     font-size: 20px;
-    left: 450px;
     color: white;
     text-decoration: none;
     border-top: 4px;
@@ -95,6 +92,7 @@ body {
 #home-image .slide {
     background-image: url('../images/house-blur-2.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     top: 0px;
     left: 0px;
