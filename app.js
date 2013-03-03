@@ -35,7 +35,7 @@ app.configure('production', function() {
 });
 
 app.get('/', function(req, res) {
-  res.sendfile(__dirname + '/public/index.html');
+  res.sendfile(__dirname + '/public/index-new.html');
 });
 
 app.get('/chad', function(req, res){
