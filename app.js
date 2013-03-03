@@ -31,7 +31,7 @@ app.configure('development', function(){
 app.configure('production', function() {
   app.use(express.errorHandler());
 
-  port = 80;
+  port = 3000;
 });
 
 app.get('/', function(req, res) {
