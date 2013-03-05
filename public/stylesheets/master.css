@@ -88,6 +88,7 @@ body {
     z-index: 2000;
 }
 
+
 .home-photo .forever2 {
     font-family: 'Poiret One', sans-serif;
     color: white;
@@ -115,5 +116,39 @@ body {
 	padding-top: 25px;
 	font-size: 17px
 }
+
+
+@media screen and (max-width: 830px) {
+    
+    .header-text {
+        font-size: 35px;
+    }
+
+    .special {
+        padding-top: 10px;
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-photo .forever {
+        font-size: 33px;
+    }
+
+    .home-photo .forever2 {
+        font-size: 33px;
+        top: 270px;
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+    .special {
+        padding-top: 10px;
+        font-size: 17px;
+    }
+}
+
 /* =Footer
 -----------------------------------------------------------------------------*/
